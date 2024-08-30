@@ -13,7 +13,13 @@ public class TomatoPlantBehavior : MonoBehaviour
 
     void FixedUpdate()
     {
-        GrowTomatoes();
+        if (CheckIfGrounded()) //the plant will only grow if on the ground
+                GrowTomatoes();
+    }
+
+    bool CheckIfGrounded()
+    {
+        return Physics.Raycast(transform.position, Vector3.down, 0.5f);
     }
 
     void GrowTomatoes() //Makes the tomatoes go big big
