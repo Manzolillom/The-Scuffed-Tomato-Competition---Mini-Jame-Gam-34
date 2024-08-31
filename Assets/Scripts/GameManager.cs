@@ -4,14 +4,14 @@ using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour
 {
     [SerializeField] float dayTimeLenght;
-    float dayTimeLeft;
+    public float dayTimeLeft;
 
     void Start()
     {
         dayTimeLeft = dayTimeLenght;
     }
 
-    void Update()
+    void Update()   
     {
         dayTimeLeft -= Time.deltaTime;
         if(dayTimeLeft < 0)
