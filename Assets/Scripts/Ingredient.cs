@@ -5,5 +5,5 @@ public class Ingredient
 {
     public string ingredintName;
     public GameObject ingredientGameObj;
-    public Sprite ingredient2DSprite;
+    public GameObject ingredientSprite;
 }
