@@ -35,17 +35,14 @@ public class NumberKeeperBehavior : MonoBehaviour
 
         if (minutesBackText.text != minutes.ToString())
         {
-            Debug.Log("MINUTES TIC");
             animatorMinutes.SetTrigger("count");
         }
         if (secondsDBackText.text != secondsD.ToString())
         {
-            Debug.Log("DECIMAL TIC");
             animatorSecondsD.SetTrigger("count");
         }
         if (secondsUBackText.text != secondsU.ToString())
         {
-            Debug.Log("SECONDS TIC");
             animatorSecondsU.SetTrigger("count");
         }
 
